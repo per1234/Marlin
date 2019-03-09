@@ -132,7 +132,7 @@ const PinInfo pin_array[] PROGMEM = {
   bool get_pinMode(int8_t pin) {return *portModeRegister(digitalPinToPort_DEBUG(pin)) & digitalPinToBitMask_DEBUG(pin); }
 #endif
 
-#if defined(__AVR_ATmega1284P__)  // 1284 IDE extensions set this to the number of
+#if defined(__AVR_ATmega1284P__) || defined(__AVR_ATmega1284__))  // 1284 IDE extensions set this to the number of
   #undef NUM_DIGITAL_PINS         // digital only pins while all other CPUs have it
   #define NUM_DIGITAL_PINS 32     // set to digital only + digital/analog
 #endif

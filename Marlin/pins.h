@@ -844,7 +844,7 @@
   #define AVR_MISO_PIN 12
   #define AVR_MOSI_PIN 11
   #define AVR_SS_PIN   10
-#elif defined(__AVR_ATmega644__) || defined(__AVR_ATmega644P__) || defined(__AVR_ATmega644PA__) || defined(__AVR_ATmega1284P__)
+#elif defined(__AVR_ATmega644__) || defined(__AVR_ATmega644P__) || defined(__AVR_ATmega644PA__) || defined(__AVR_ATmega1284P__) || defined(__AVR_ATmega1284__)
   #define AVR_SCK_PIN  7
   #define AVR_MISO_PIN 6
   #define AVR_MOSI_PIN 5
